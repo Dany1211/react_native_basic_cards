@@ -1,10 +1,11 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function FancyCards() {
   return (
     <View>
       <Text style={styles.headingText}>Trending Places</Text>
+      <ScrollView horizontal={true}>
       <View style={[styles.card,styles.cardElevated]}>
          <Image
          source={require('../assets/burj.jpg')}
@@ -29,6 +30,8 @@ export default function FancyCards() {
             <Text style={styles.cardFooter}>5.5 kms away</Text>
          </View>
       </View>
+      </ScrollView>
+      
     </View>
   )
 }
@@ -40,12 +43,12 @@ const styles = StyleSheet.create({
      textAlign : "center"
     },
   card :{
-     width : "auto",
+     width : 350,
      height : "auto" ,
-     marginHorizontal:25 ,
+     marginHorizontal:20 ,
      marginTop : 10 ,
      borderRadius : 20 ,
-     marginBottom : 10 ,
+     marginBottom : 25 ,
     //  padding: 15,
   },
   cardElevated : {

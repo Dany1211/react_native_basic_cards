@@ -4,15 +4,17 @@ import Flatcards from './components/Flatcards'
 import ElevatedCards from './components/ElevatedCards'
 import FancyCards from './components/FancyCards'
 import ActionCards from './components/ActionCards'
+import ContactList from './components/ContactList'
 
 const AppPro = () => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Flatcards />
+        {/* <Flatcards />
         <ElevatedCards />
         <FancyCards />
-        <ActionCards/>
+        <ActionCards/> */}
+        <ContactList />
       </ScrollView>
     </SafeAreaView>
   )
